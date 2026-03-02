@@ -1,19 +1,24 @@
 <script setup lang="ts">
-import Header from './components/Header/Header.vue';
-import LinzMap from './components/LinzMap.vue';
-import MapSidebar from './components/Sidebar/MapSidebar.vue';
-
-
-
+import { Suspense } from "vue";
+import LinzMap from "./components/Maps/LinzMap.vue";
+import MapSidebar from "./components/Sidebar/MapSidebar.vue";
 </script>
 
 <template>
-<!-- <Header /> -->
-    <main class="flex">
+  <!-- <Header /> -->
+  <main class="flex h-screen">
+    <Suspense>
+      <template #default>
         <MapSidebar />
-        <LinzMap />
-    </main>
+      </template>
+      <template #fallback>
+        <div class="flex items-center justify-center h-full w-full">
+          <p class="text-gray-500 text-lg">Loading...</p>
+        </div>
+      </template>
+    </Suspense>
+    <LinzMap />
+  </main>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

@@ -1,13 +1,9 @@
 <template>
-    <nav class="">
-        <h1 class="p-5">LOGO</h1>
-    </nav>
+  <nav class="">
+    <h1 class="p-5">LOGO</h1>
+  </nav>
 </template>
 
-<script setup lang="ts">
+<script setup lang="ts"></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>
