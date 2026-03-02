@@ -9,9 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@maptiler/sdk": "^3.11.0",
+    "@maptiler/client": "^2.7.0",
+    "@maptiler/sdk": "^3.11.1",
     "@primeuix/themes": "^2.0.3",
-    "axios": "^1.13.4",
+    "@turf/turf": "^7.1.0",
+    "axios": "^1.13.6",
     "pinia": "^3.0.4",
     "primevue": "^4.5.4",
     "tailwindcss-primeui": "^0.6.1",
