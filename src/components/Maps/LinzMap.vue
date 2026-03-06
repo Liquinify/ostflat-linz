@@ -6,11 +6,9 @@
 
 <script setup lang="ts">
 import "@maptiler/sdk/dist/maptiler-sdk.css";
-import { useMap } from "../../composables/useMap";    
+import { useMap } from "../../composables/useMap";
 
 const { mapContainer } = useMap();
-
-
 // const handleApartmentPolygons = async (coordinates:number[][]) => {
 //     const coordinateLists = [];
 //     const DELAY_MS = 4000;
@@ -40,4 +38,6 @@ const { mapContainer } = useMap();
 
 //     return coordinateLists;
 // }
+
+
 </script>

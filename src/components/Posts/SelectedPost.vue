@@ -77,20 +77,18 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from "vue";
-import { Carousel } from "primevue";
-import Button from "primevue/button";
-import type { ApartmentAttributes } from "../../types/ApartmentAttributes";
+import { computed } from 'vue';
+import { Carousel, Button } from 'primevue';
+import type { ApartmentAttributes } from '../../types/ApartmentAttributes';
 
 const props = defineProps<{
   apartment: ApartmentAttributes;
 }>();
 
 const images = computed(() =>
-  props.apartment.advert_image_list.trim().split(',')
+  props.apartment.advert_image_list.split(',')
 );
 </script>
-
 <style scoped>
 
 :deep(.p-carousel) {
